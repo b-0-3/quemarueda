@@ -1,18 +1,20 @@
 # Quemarueda
 
-Simulador de drag (1/4 de milla) para móvil. Prepara el coche pieza a pieza, ajusta el reglaje en el banco y gana la liga nocturna de 10 rondas.
+Juego de drag en pixel art para móvil, muy técnico: compras coches, los preparas pieza a pieza, ajustas el reglaje en el banco y corres a 1/4 de milla.
 
-## Cómo se corre
-- **Embrague** (izquierda): mantén para entrar en stage. Suéltalo cuando se encienda el verde. Si lo sueltas antes, luz roja.
-- **Gas** (derecha): sube vueltas antes de salir (o 2-step con centralita programable). En carrera es el **cambio**: cambia cuando las luces se pongan azules.
-- Gana quien cruza antes contando reacción + tiempo (R/T + ET).
-- Teclado: ↓ o C = embrague, espacio = gas/cambio, N = nitroso.
+## Qué hay
+- **6 coches** con tracción delantera, trasera o total: Hatch 16V, Sedán 1.8, Coupé 2.0, Turbo AWD, Muscle V8 y GT Biturbo.
+- **20 tipos de pieza** en 6 categorías: bloque (swaps), admisión, escape, culata y levas, interiores, volante motor, turbo, intercooler, inyectores, bomba, combustible, centralita, embrague, caja, diferencial, neumáticos, suspensión, aligeramiento, aerodinámica y nitroso.
+- **Mecánica real**: los inyectores y la bomba limitan la potencia, el embrague patina si le das más par del que aguanta, los interiores marcan la presión de turbo segura, y avance, mezcla, calor y octanaje deciden la detonación.
+- **Reglaje**: grupo final, relaciones por marcha, presión de turbo, avance, mezcla (AFR), corte de inyección, 2-step, presión de neumáticos y alerón.
+- **Banco**: curvas de potencia y par, diagnóstico de lo que te limita, tabla de marchas y ficha técnica.
+- **Desgaste**: neumáticos, embrague y motor. El motor puede romperse en carrera si lo llevas al límite.
+- **Estética**: pintura y acabado, llantas y su color, kits, alerones, vinilos, lunas, faros y altura.
+- **Carreras**: liga de 10 rondas y callejeras con apuesta.
+- **Ayudas opcionales**: embrague manual o automático, cambio manual o automático, control de tracción e indicadores. Quitar ayudas sube los premios.
 
-## Lo técnico
-- Piezas: motor, sobrealimentación, centralita, combustible, neumáticos, suspensión, transmisión, aligeramiento, nitroso y aerodinámica.
-- Reglaje: grupo final, relaciones por marcha, presión de turbo, avance de encendido, 2-step, presión de neumáticos y ángulo del alerón.
-- Detonación: avance + presión contra octanaje e interiores. Si detona, la centralita quita potencia.
-- Banco: curvas de potencia y par, tabla de marchas y ficha técnica.
-- Hoja de tiempos con R/T, 60 ft, 330 ft, 1/8, 1000 ft, 1/4 y velocidades.
+## Controles
+GAS (mantener), CAMBIO, EMBRAGUE (si es manual) y NITROSO.
+Teclado: → gas, espacio/↑ cambio, ↓ embrague, N nitroso.
 
-Todo va en `index.html` (HTML + CSS + JS, sin librerías). La partida se guarda en el navegador.
+Todo va en `index.html`. La partida se guarda en el navegador.
